@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/sub_menu_feedsettings_bottom_navigation"
+    app:startDestination="@id/nav_feedchartFragment">
+
+    <fragment
+        android:id="@+id/nav_feedchartFragment"
+        android:name="com.example.equasmartmobileappvk1.ui.feedsettings.submenu_feedsettings.FeedchartFragment"
+        android:label="@string/menu_feedchart"
+        tools:layout="@layout/fragment_feedchart" />
+    <fragment
+        android:id="@+id/nav_feedsettingSubMenuFragment"
+        android:name="com.example.equasmartmobileappvk1.ui.feedsettings.submenu_feedsettings.FeedsettingSubMenuFragment"
+        android:label="@string/menu_feedsettingsubmenu"
+        tools:layout="@layout/fragment_feedsetting_sub_menu" />
+    <fragment
+        android:id="@+id/nav_feedmenuFragment"
+        android:name="com.example.equasmartmobileappvk1.ui.feedsettings.submenu_feedsettings.FeedmenuFragment"
+        android:label="@string/menu_feedmenu"
+        tools:layout="@layout/fragment_feedmenu" />
+</navigation>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_dashboard">
+
+    <fragment
+        android:id="@+id/nav_dashboard"
+        android:name="com.example.equasmartmobileappvk1.ui.dashboard.DashboardFragment"
+        android:label="@string/menu_dashboard"
+        tools:layout="@layout/fragment_dashboard" />
+
+    <fragment
+        android:id="@+id/nav_addsystem"
+        android:name="com.example.equasmartmobileappvk1.ui.addsystem.AddsystemFragment"
+        android:label="@string/menu_addsystem"
+        tools:layout="@layout/fragment_addsystem" />
+
+    <fragment
+        android:id="@+id/nav_feedsettings"
+        android:name="com.example.equasmartmobileappvk1.ui.feedsettings.FeedsettingsFragment"
+        android:label="@string/menu_feedsettings"
+        tools:layout="@layout/fragment_feedsettings" />
+
+    <fragment
+        android:id="@+id/nav_watersettings"
+        android:name="com.example.equasmartmobileappvk1.ui.watersettings.WatersettingsFragment"
+        android:label="@string/menu_watersettings"
+        tools:layout="@layout/fragment_watersettings" />
+
+    <fragment
+        android:id="@+id/nav_notification"
+        android:name="com.example.equasmartmobileappvk1.ui.notification.NotificationFragment"
+        android:label="@string/menu_notification"
+        tools:layout="@layout/fragment_notification" />
+
+    <fragment
+        android:id="@+id/nav_printlogs"
+        android:name="com.example.equasmartmobileappvk1.ui.printlogs.PrintlogsFragment"
+        android:label="@string/menu_printlogs"
+        tools:layout="@layout/fragment_printlogs" />
+
+    <fragment
+        android:id="@+id/nav_qrscanner"
+        android:name="com.example.equasmartmobileappvk1.ui.scanqrcode.ScanqrcodeFragment"
+        android:label="@string/menu_qrscanner"
+        tools:layout="@layout/fragment_scanqrcode" />
+
+    <fragment
+        android:id="@+id/nav_logout"
+        android:name="com.example.equasmartmobileappvk1.ui.logout.LogoutFragment"
+        android:label="@string/menu_logout"
+        tools:layout="@layout/fragment_logout" />
+</navigation>

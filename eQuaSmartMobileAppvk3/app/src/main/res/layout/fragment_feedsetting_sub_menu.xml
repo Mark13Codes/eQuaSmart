@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:context=".ui.feedsettings.FeedsettingsFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#F4EDDC">
+
+        <TextView
+            android:id="@+id/text_slideshow"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.815" />
+
+        <TextView
+            android:id="@+id/feedsettings_title_textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:drawableStart="@drawable/kitchen_set_solid"
+            android:drawablePadding="4dp"
+            android:text="Feed Settings"
+            android:textColor="#4CAF50"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/changesettings_title_textView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.076"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/changesettings_title_textView"
+            android:layout_width="151dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="276dp"
+            android:drawableStart="@drawable/gears_solid"
+            android:drawablePadding="4dp"
+            android:text="Change Settings"
+            android:textColor="#4CAF50"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/editfeedsettings_textView"
+            app:layout_constraintEnd_toEndOf="@+id/feedsettings_title_textView"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/feedsettings_title_textView"
+            app:layout_constraintTop_toBottomOf="@+id/feedsettings_title_textView" />
+
+        <Button
+            android:id="@+id/amountperfeeding_button"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="33dp"
+            android:backgroundTint="#FFA500"
+            android:drawableTop="@drawable/utensils_solid"
+            android:paddingTop="7dp"
+            android:paddingBottom="5dp"
+            android:text="Amount Per Feeding"
+            app:layout_constraintBottom_toTopOf="@+id/feedsession_button"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.487"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/feedsession_button"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#ab9b78"
+            android:drawableTop="@drawable/repeat_solid"
+            android:paddingTop="7dp"
+            android:paddingBottom="5dp"
+            android:text="Feed Session per Day"
+            app:layout_constraintBottom_toTopOf="@+id/adjustamount_button"
+            app:layout_constraintEnd_toEndOf="@+id/amountperfeeding_button"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/amountperfeeding_button"
+            app:layout_constraintTop_toBottomOf="@+id/amountperfeeding_button" />
+
+        <Button
+            android:id="@+id/adjustamount_button"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:backgroundTint="#3fe03f"
+            android:drawableTop="@drawable/sliders_solid"
+            android:paddingTop="7dp"
+            android:paddingBottom="5dp"
+            android:text="Adjust Amount per Day"
+            app:layout_constraintBottom_toTopOf="@+id/activatemotor_button"
+            app:layout_constraintEnd_toEndOf="@+id/feedsession_button"
+            app:layout_constraintStart_toStartOf="@+id/feedsession_button"
+            app:layout_constraintTop_toBottomOf="@+id/feedsession_button" />
+
+        <Button
+            android:id="@+id/activatemotor_button"
+            android:layout_width="205dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="Activate Motor"
+            app:layout_constraintBottom_toTopOf="@+id/amountperfeeding_textfieldlayout"
+            app:layout_constraintEnd_toEndOf="@+id/adjustamount_button"
+            app:layout_constraintHorizontal_bias="0.503"
+            app:layout_constraintStart_toStartOf="@+id/adjustamount_button"
+            app:layout_constraintTop_toBottomOf="@+id/adjustamount_button" />
+
+        <TextView
+            android:id="@+id/editfeedsettings_textView"
+            android:layout_width="124dp"
+            android:layout_height="18dp"
+            android:drawableEnd="@drawable/pen_to_square_solid"
+            android:paddingEnd="2dp"
+            android:text="Edit Feed Settings"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.942"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.406" />
+
+        <Button
+            android:id="@+id/submit_button"
+            android:layout_width="205dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="Submit"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/adjustamoutby_textfieldlayout" />
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/amountperfeeding_textfieldlayout"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="60dp"
+            android:hint="Amount per Feeding:"
+            app:endIconMode="clear_text"
+            app:layout_constraintBottom_toTopOf="@+id/feedingtimes_textfieldlayout"
+            app:layout_constraintEnd_toEndOf="@+id/adjustamount_button"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/adjustamount_button"
+            app:layout_constraintTop_toBottomOf="@+id/activatemotor_button">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/amountperfeeding_textfieldtextinput"
+                android:drawableStart="@drawable/ic_amount_per_feeding"
+                android:drawablePadding="6dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:layout_editor_absoluteX="37dp"
+                tools:layout_editor_absoluteY="367dp" />
+
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/feedingtimes_textfieldlayout"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:hint="Feeding Times:"
+            app:endIconMode="clear_text"
+            app:layout_constraintBottom_toTopOf="@+id/adjustamoutby_textfieldlayout"
+            app:layout_constraintEnd_toEndOf="@+id/amountperfeeding_textfieldlayout"
+            app:layout_constraintStart_toStartOf="@+id/amountperfeeding_textfieldlayout"
+            app:layout_constraintTop_toBottomOf="@+id/amountperfeeding_textfieldlayout">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/feedingtimes_textfieldtextinput"
+                android:drawableStart="@drawable/ic_feeding_times"
+                android:drawablePadding="6dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/adjustamoutby_textfieldlayout"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:hint="Adjust Amount by:"
+            app:endIconMode="clear_text"
+            app:layout_constraintBottom_toTopOf="@+id/submit_button"
+            app:layout_constraintEnd_toEndOf="@+id/feedingtimes_textfieldlayout"
+            app:layout_constraintStart_toStartOf="@+id/feedingtimes_textfieldlayout"
+            app:layout_constraintTop_toBottomOf="@+id/feedingtimes_textfieldlayout">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/adjustamountby_textfieldtexinput"
+                android:drawableStart="@drawable/ic_adjust_amount_per_feed"
+                android:drawablePadding="6dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>

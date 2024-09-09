@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:context=".ui.dashboard.DashboardFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#F4EDDC">
+
+        <TextView
+            android:id="@+id/text_home"
+            android:layout_width="312dp"
+            android:layout_height="55dp"
+            android:textAlignment="center"
+            android:textColor="#ff0000"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.636"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.4" />
+
+        <Button
+            android:id="@+id/fish_gram_BTN"
+            style="@style/Widget.MaterialComponents.Button"
+            android:layout_width="350dp"
+            android:layout_height="65dp"
+            android:layout_marginStart="33dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="28dp"
+            android:layout_marginBottom="5dp"
+            android:backgroundTint="#fff27a"
+            android:drawableLeft="@drawable/fish_solid"
+            android:paddingStart="120dp"
+            android:paddingEnd="90dp"
+            android:text="0 Grams Fed"
+            app:layout_constraintBottom_toTopOf="@+id/water_parameter_BTN"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/water_parameter_BTN"
+            android:layout_width="350dp"
+            android:layout_height="65dp"
+            android:layout_marginBottom="5dp"
+            android:backgroundTint="#5e84ff"
+            android:drawableLeft="@drawable/droplet_solid"
+            android:paddingStart="70dp"
+            android:paddingEnd="50dp"
+            android:text="Water Parameters 'OK'"
+            app:layout_constraintBottom_toTopOf="@+id/water_temp_BTN"
+            app:layout_constraintEnd_toEndOf="@+id/fish_gram_BTN"
+            app:layout_constraintHorizontal_bias="0.585"
+            app:layout_constraintStart_toStartOf="@+id/fish_gram_BTN"
+            app:layout_constraintTop_toBottomOf="@+id/fish_gram_BTN" />
+
+        <Button
+            android:id="@+id/water_temp_BTN"
+            android:layout_width="350dp"
+            android:layout_height="65dp"
+            android:backgroundTint="#ff7d7d"
+            android:drawableLeft="@drawable/temperature_three_quarters_solid"
+            android:paddingStart="130dp"
+            android:paddingEnd="120dp"
+            android:text="25c"
+            app:layout_constraintBottom_toTopOf="@+id/clock_textView"
+            app:layout_constraintEnd_toEndOf="@+id/water_parameter_BTN"
+            app:layout_constraintHorizontal_bias="0.608"
+            app:layout_constraintStart_toStartOf="@+id/water_parameter_BTN"
+            app:layout_constraintTop_toBottomOf="@+id/water_parameter_BTN" />
+
+        <SurfaceView
+            android:id="@+id/surfaceView"
+            android:layout_width="355dp"
+            android:layout_height="230dp"
+            android:layout_marginTop="88dp"
+            android:layout_marginBottom="24dp"
+            app:layout_constraintBottom_toTopOf="@+id/surfaceView2"
+            app:layout_constraintEnd_toEndOf="@+id/water_temp_BTN"
+            app:layout_constraintStart_toStartOf="@+id/water_temp_BTN"
+            app:layout_constraintTop_toBottomOf="@+id/clock_textView" />
+
+        <TextView
+            android:id="@+id/clock_textView"
+            android:layout_width="270dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:drawableStart="@drawable/clock_solid"
+            android:drawablePadding="4dp"
+            android:text="Edit this on Activity for Real Time Clock"
+            app:layout_constraintBottom_toTopOf="@+id/surfaceView"
+            app:layout_constraintEnd_toEndOf="@+id/water_temp_BTN"
+            app:layout_constraintHorizontal_bias="0.547"
+            app:layout_constraintStart_toStartOf="@+id/water_temp_BTN"
+            app:layout_constraintTop_toBottomOf="@+id/water_temp_BTN" />
+
+        <TextView
+            android:id="@+id/livestream_textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:drawableEnd="@drawable/video_solid"
+            android:drawablePadding="4dp"
+            android:text="LiveStream"
+            android:textColor="#6e1a1a"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/surfaceView"
+            app:layout_constraintEnd_toEndOf="@+id/water_temp_BTN"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="@+id/clock_textView"
+            app:layout_constraintTop_toBottomOf="@+id/clock_textView"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:drawableStart="@drawable/camera_retro_solid"
+            android:drawablePadding="4dp"
+            android:text="Fish Cam"
+            android:textColor="#6e1a1a"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/water_temp_BTN"
+            app:layout_constraintTop_toBottomOf="@+id/livestream_textView" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="40dp"
+            android:drawableStart="@drawable/camera_retro_solid"
+            android:drawablePadding="4dp"
+            android:text="Water Tester Cam"
+            android:textColor="#6e1a1a"
+            app:layout_constraintBottom_toTopOf="@+id/surfaceView2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/surfaceView"
+            app:layout_constraintTop_toBottomOf="@+id/surfaceView"
+            app:layout_constraintVertical_bias="0.711" />
+
+        <SurfaceView
+            android:id="@+id/surfaceView2"
+            android:layout_width="355dp"
+            android:layout_height="230dp"
+            android:layout_marginTop="80dp"
+            android:layout_marginBottom="50dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/surfaceView"
+            app:layout_constraintHorizontal_bias="0.501"
+            app:layout_constraintStart_toStartOf="@+id/surfaceView"
+            app:layout_constraintTop_toBottomOf="@+id/surfaceView" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>

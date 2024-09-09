@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">eQuaSmart Mobile App</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_dashboard">Dashboard</string>
+    <string name="menu_addsystem">Add Machine</string>
+    <string name="menu_feedsettings">Feed Settings</string>
+    <string name="menu_watersettings">Water Settings</string>
+    <string name="menu_notification">Notification</string>
+    <string name="menu_printlogs">Print Logs</string>
+    <string name="menu_qrscanner">QR Scanner</string>
+    <string name="menu_logout">Logout</string>
+
+    <string name="menu_feedchart">Feed Chart</string>
+    <string name="menu_feedsettingsubmenu">Feed Setting</string>
+    <string name="menu_feedmenu">Feed Menu</string>
+</resources>

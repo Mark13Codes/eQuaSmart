@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_feedchartFragment"
+            android:icon="@drawable/feed_chart_line_solid"
+            android:title="@string/menu_feedchart"/>
+        <item
+            android:id="@+id/nav_feedsettingSubMenuFragment"
+            android:icon="@drawable/feed_settings_plate_wheat"
+            android:title="@string/menu_feedsettingsubmenu"/>
+        <item
+            android:id="@+id/nav_feedmenuFragment"
+            android:icon="@drawable/feed_menu_rectangle_list_regular"
+            android:title="@string/menu_feedmenu"/>
+    </group>
+
+</menu>

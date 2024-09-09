@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Shadow Layer -->
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="#33000000" /> <!-- Semi-transparent black for shadow -->
+            <corners android:bottomLeftRadius="20dp" android:bottomRightRadius="20dp" />
+        </shape>
+    </item>
+    <!-- Background Layer -->
+    <item android:bottom="6dp"> <!-- Adjust top to simulate shadow offset -->
+        <shape android:shape="rectangle">
+            <solid android:color="#dbd0b6" />
+            <corners android:bottomLeftRadius="20dp" android:bottomRightRadius="20dp" />
+        </shape>
+    </item>
+</layer-list>

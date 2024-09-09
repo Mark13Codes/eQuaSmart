@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_dashboard"
+            android:icon="@drawable/nav_house"
+            android:title="@string/menu_dashboard" />
+        <item
+            android:id="@+id/nav_addsystem"
+            android:icon="@drawable/nav_add_system"
+            android:title="@string/menu_addsystem" />
+        <item
+            android:id="@+id/nav_feedsettings"
+            android:icon="@drawable/nav_feed_settings"
+            android:title="@string/menu_feedsettings" />
+        <item
+            android:id="@+id/nav_watersettings"
+            android:icon="@drawable/nav_water_settings"
+            android:title="@string/menu_watersettings" />
+        <item
+            android:id="@+id/nav_notification"
+            android:icon="@drawable/nav_notification"
+            android:title="@string/menu_notification" />
+        <item
+            android:id="@+id/nav_printlogs"
+            android:icon="@drawable/nav_print_logs"
+            android:title="@string/menu_printlogs" />
+        <item
+            android:id="@+id/nav_qrscanner"
+            android:icon="@drawable/nav_qr_scanner"
+            android:title="@string/menu_qrscanner" />
+    </group>
+
+    <item
+        android:title="">
+
+        <menu>
+            <item
+                android:id="@+id/nav_logout"
+                android:icon="@drawable/nav_logout"
+                android:title="@string/menu_logout"/>
+        </menu>
+
+    </item>
+
+</menu>
